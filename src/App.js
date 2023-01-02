@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+
 import './App.css';
+import './Components/DisplayCard'
+import DisplayCard from './Components/DisplayCard';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='text-5xl m-2 p-2'>Cat Fact Generator</h1>
+
+    <DisplayCard />
+
+    <img src="/images/cat3.png" alt="cat" className="object-scale-down h-48 w-96r mt-20 inline-flex" />
+     
+    
+
     </div>
   );
 }
